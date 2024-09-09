@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+
+:root{
+--Nutmeg: hsl(14, 45%, 36%);
+--Dark-Raspberry: hsl(332, 51%, 32%);
+--White: hsl(0, 0%, 100%);
+--Rose-White: hsl(330, 100%, 98%);
+--Eggshell: hsl(30, 54%, 90%);
+--Light-Grey: hsl(30, 18%, 87%);
+--Wenge-Brown: hsl(30, 10%, 34%);
+--Dark-Charcoal: hsl(24, 5%, 18%);
+--font-size:16px;
+--font-family: "Young Serif", serif;
+--weight:400, 600, 700;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--Eggshell);
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+
+.container{
+    background-color: var(--White);
+    border-radius: 15px;
+    width: 500px;
+    padding: 20px;
+
+}
+
+.omelette{
+    width: 100%;
+}
+
+
+.preparation{
+    background-color: var(--Rose-White);
+    border-radius: 8px;
+    margin: 20px 0px;
+}
+
+.preparation ul, .ingredient ul, .instruction ol{
+    padding: 10px 30px;
+    /* background-color: red; */
+}
+
+.preparation ul li, .ingredient ul li, .instruction ol li{
+    padding: 5px;
+}
+
+.pre, .ingre{
+    color: var(--Dark-Charcoal);
+}
+
+.pre::marker, .ingre::marker, .instruct::marker{
+    color: var(--Dark-Raspberry);
+    font-family: var(--font-family);
+}
+
+.ingredient, .instruction{
+    margin: 20px 0;
+    border-bottom: 2px solid var(--Light-Grey);
+
+}
+
+
+.instruct{
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.nutrition{
+    margin: 20px 0;
+
+}
+
+h1{
+    font-size: 1.5rem;
+    padding: 10px 0px;
+    color: var(--Dark-Charcoal);
+
+}
+
+h2,h3{
+    color: var(--Dark-Raspberry);
+    font-family: var(--font-family);
+    font-weight: 400;
+}
+
+h3{
+    font-size: var(--font-size);
+    padding: 10px 25px 0px 10px;
+}
+
+
+h2{
+    font-size: 1.25rem;
+}
+
+p{
+    /* font-size: var(--font-size); */
+    font-size: 12px;
+    line-height: 1.5;
+    color: var(--Dark-Charcoal);
+
+
+}
+
+.ins{
+    font-weight: 600;
+    color: var(--Dark-Charcoal);
+    font-size: 14px;
+}
+
+.nutrit{
+    font-size: 13px;
+    color: var(--Dark-Charcoal);
+    padding: 5px 0px;
+
+}
+
+tr,td,th{
+    border-bottom: 2px solid var(--Light-Grey);
+    padding: 7px;
+}
+
+table{
+
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th{
+    text-align: left;
+    color: var(--Dark-Charcoal);
+    font-size: var(--font-size);
+}
+
+td{
+    color: var(--Dark-Raspberry);
+    font-size: var(--font-size);
+    font-weight: 600;
+}
+
+.attribution {
+    font-size: 11px; 
+    text-align: center;
+}
+
+.attribution a { 
+   color: hsl(228, 45%, 44%);
+}
+
+
+@media(max-width:375px) {
+    .container{
+       
+        width: 400px;
+        padding: 20px;
+    
+    }
+}
