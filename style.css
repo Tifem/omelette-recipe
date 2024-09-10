@@ -29,25 +29,25 @@ body{
 
 .container{
     background-color: var(--White);
-    border-radius: 15px;
+    border-radius: 1rem;
     width: 500px;
-    padding: 20px;
+    padding: 1.25rem;
 
 }
 
 .omelette{
-    width: 100%;
+    max-width: 100%;
 }
 
 
 .preparation{
     background-color: var(--Rose-White);
     border-radius: 8px;
-    margin: 20px 0px;
+    margin: 1.2rem 0px;
 }
 
 .preparation ul, .ingredient ul, .instruction ol{
-    padding: 10px 30px;
+    padding: 0.625rem 1.875rem;
     /* background-color: red; */
 }
 
@@ -65,19 +65,19 @@ body{
 }
 
 .ingredient, .instruction{
-    margin: 20px 0;
+    margin: 1.25rem 0;
     border-bottom: 2px solid var(--Light-Grey);
 
 }
 
 
 .instruct{
-    font-size: 12px;
+    font-size: 0.75rem;
     line-height: 1.5;
 }
 
 .nutrition{
-    margin: 20px 0;
+    margin: 1.25rem 0;
 
 }
 
@@ -116,7 +116,7 @@ p{
 .ins{
     font-weight: 600;
     color: var(--Dark-Charcoal);
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 
 .nutrit{
@@ -133,7 +133,7 @@ tr,td,th{
 
 table{
 
-    width: 100%;
+    max-width: 100%;
     border-collapse: collapse;
 }
 
@@ -163,7 +163,7 @@ td{
     .container{
        
         width: 400px;
-        padding: 20px;
+        padding: 1.25rem;
     
     }
 }
